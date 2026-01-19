@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Polyglot",
+  "description": "A real-time simultaneous interpreter powered by Gemini 1.5 Flash logic (upgraded to 2.5 Flash). Supports Chinese-English bidirectional translation via audio.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
