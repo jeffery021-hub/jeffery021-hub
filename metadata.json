@@ -1,6 +1,6 @@
 {
-  "name": "Gemini Polyglot",
-  "description": "A real-time simultaneous interpreter powered by Gemini 1.5 Flash logic (upgraded to 2.5 Flash). Supports Chinese-English bidirectional translation via audio.",
+  "name": "Groq 极速同传",
+  "description": "基于 Groq API (Whisper + Llama 3) 的超快实时中英同声传译工具。支持按住说话，智能识别语言并朗读翻译结果。",
   "requestFramePermissions": [
     "microphone"
   ]

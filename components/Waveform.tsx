@@ -12,7 +12,7 @@ export const Waveform: React.FC<WaveformProps> = ({ isRecording }) => {
       {[...Array(5)].map((_, i) => (
         <div
           key={i}
-          className="w-1.5 bg-blue-500 rounded-full animate-music"
+          className="w-1.5 bg-orange-500 rounded-full animate-music"
           style={{
             height: '20%',
             animationDuration: `${0.5 + i * 0.1}s`,

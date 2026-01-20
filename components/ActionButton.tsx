@@ -16,8 +16,8 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ appState, onStart, o
       {/* Ripple effects */}
       {isRecording && (
         <>
-          <div className="absolute inset-0 rounded-full bg-blue-400 opacity-20 animate-ping-slow"></div>
-          <div className="absolute inset-0 rounded-full bg-blue-500 opacity-20 animate-pulse-slow delay-75"></div>
+          <div className="absolute inset-0 rounded-full bg-orange-400 opacity-20 animate-ping-slow"></div>
+          <div className="absolute inset-0 rounded-full bg-orange-500 opacity-20 animate-pulse-slow delay-75"></div>
         </>
       )}
 
@@ -39,7 +39,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ appState, onStart, o
           shadow-xl transition-all duration-200 transform
           ${isRecording 
             ? 'bg-red-500 scale-110 ring-4 ring-red-200' 
-            : 'bg-gradient-to-br from-blue-500 to-blue-600 active:scale-95 hover:shadow-blue-500/30'}
+            : 'bg-gradient-to-br from-orange-500 to-orange-600 active:scale-95 hover:shadow-orange-500/30'}
           ${isProcessing ? 'opacity-75 cursor-not-allowed' : 'cursor-pointer'}
         `}
       >
@@ -56,7 +56,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ appState, onStart, o
       
       <div className="mt-6 text-center">
         <p className="text-sm font-medium text-slate-500 uppercase tracking-widest">
-          {isRecording ? 'Release to Translate' : isProcessing ? 'Translating...' : 'Hold to Speak'}
+          {isRecording ? '松开立即翻译' : isProcessing ? 'Groq 思考中...' : '按住 说话'}
         </p>
       </div>
     </div>

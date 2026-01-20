@@ -7,7 +7,7 @@ export enum AppState {
 }
 
 export interface TranslationResult {
-  originalText?: string; // We might not get this from audio-only, but good to have in type
+  originalText?: string; 
   translatedText: string;
   detectedLanguage?: 'zh' | 'en';
 }
@@ -18,6 +18,11 @@ export interface AudioConfig {
 }
 
 declare global {
+  interface Window {
+    GOOGLE_API_KEY?: string;
+    VITE_API_KEY?: string;
+    API_KEY?: string;
+  }
   interface AIStudio {
     hasSelectedApiKey: () => Promise<boolean>;
     openSelectKey: () => Promise<void>;
